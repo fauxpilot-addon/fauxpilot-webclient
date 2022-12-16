@@ -8,7 +8,7 @@ function input_check(){
 // Check if output format is valid or not.
 function output_check($output){
     if ( $output == "")
-        echo '<script>alert("Ooops. It seems that the GPU server is temporarily killed.")</script>';
+        echo '<script>alert("Ooops. It appears that the GPU instance or Triton server has been deactivated temporarily. Please contact admin.")</script>';
 }
 
 ?>

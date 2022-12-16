@@ -17,6 +17,7 @@ include ("err_handle.php");
 $token = (int) $_POST["token"];
 $prompt = $_POST["prompt"];
 $temperature = (float) $_POST["temperature"];
+$custom_port = (int) $_GET["custom_port"];
 
 // cURL PHP API test
 function cURLcheckBasicFunctions() {
@@ -40,7 +41,11 @@ $data_array = [
 ];
 
 // Initialize a new cURL session
-$url = "http://" . $ini['ip'] . ":".$ini['port'] . "/v1/engines/codegen/completions";
+if ($custom_port > 0)
+    $proxy_port = $custom_port;
+else
+    $proxy_port = $ini['port'];
+$url = "http://" . $ini['ip'] . ":" . $proxy_port . "/v1/engines/codegen/completions";
 $curl = curl_init($url);
 
 // Set the CURLOPT_RETURNTRANSFER option to true
