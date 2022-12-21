@@ -4,20 +4,21 @@ header('Content-type: text/html');
 
 include ("header.php");
 include ("err_handle.php");
-?>
 
-<br>
-<form>
-<input type="button" value="Go back!" onclick="window.location.assign('./input.php')">
-</form>
-</body>
-</html>
-<?php
 // Specify input data
 $token = (int) $_POST["token"];
 $prompt = $_POST["prompt"];
 $temperature = (float) $_POST["temperature"];
 $custom_port = (int) $_GET["custom_port"];
+?>
+
+<br>
+<form>
+<input type="button" value="Go back!" onclick="window.location.assign('./input.php?custom_port=<?=$custom_port?>')">
+</form>
+</body>
+</html>
+<?php
 
 // cURL PHP API test
 function cURLcheckBasicFunctions() {
