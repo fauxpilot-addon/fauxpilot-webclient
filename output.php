@@ -121,6 +121,7 @@ echo "<pre>"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <?php
+echo "<b>Backend:</b>" . $ini['model'] . "<br>";
 echo "<b>Temperature:</b>" . $temperature . "<br>";
 echo "<b>Token:</b>" . $token . "<br>";
 echo "<b>URL:</b>" . $url . "<br>";
