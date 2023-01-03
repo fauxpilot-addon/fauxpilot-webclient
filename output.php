@@ -38,6 +38,8 @@ $data_array = [
 	'prompt' => $prompt,
 	'max_tokens' => $token,
 	'temperature' => $temperature,
+	'model' => $ini['model'],
+	'logprobs' => (int) -1,
 	'stop' => ["\n\n"]
 ];
 
