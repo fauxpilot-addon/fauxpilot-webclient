@@ -14,7 +14,7 @@ $custom_port = (int) $_GET["custom_port"];
 <!-- Note: As a developer option, you can customize a port option with the "input.php?custom_port={5000|6000} style. -->
 <form action="output.php?custom_port=<?=$custom_port?>" method="post">
     <b><img src=./img/circle.png border=0 width=10 height=10></img> Model Name:</b> <?php echo $ini['model_name'] ?><br>
-    <b><img src=./img/circle.png border=0 width=10 height=10></img> Supported Languages:</b> C/C++, Python, Java, JavaScript, Ruby, TypeScript, and Go.<br>
+    <b><img src=./img/circle.png border=0 width=10 height=10></img> Supported Languages:</b> C/C++, Java, and Python.<br>
     <b><img src=./img/circle.png border=0 width=10 height=10></img> Temperature:</b>
     <select name="temperature">
         <option value="0.1" selected>0.1</option>
