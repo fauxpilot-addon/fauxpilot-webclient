@@ -14,7 +14,8 @@ $custom_port = (int) $_GET["custom_port"];
 <!-- Note: As a developer option, you can customize a port option with the "input.php?custom_port={5000|6000} style. -->
 <form action="output.php?custom_port=<?=$custom_port?>" method="post">
     <b><img src=./img/circle.png border=0 width=10 height=10></img> Model Name:</b> <?php echo $ini['model_name'] ?><br>
-    <b><img src=./img/circle.png border=0 width=10 height=10></img> Supported Languages:</b> C/C++, Java, and Python.<br>
+    <b><img src=./img/circle.png border=0 width=10 height=10></img> Supported
+Languages:</b> <font color=red><b>C/C++</b></font>, <font color=gray> Java, and Python </font>.<br>
     <b><img src=./img/circle.png border=0 width=10 height=10></img> Temperature:</b>
     <select name="temperature">
         <option value="0.1" selected>0.1</option>
@@ -46,8 +47,7 @@ $custom_port = (int) $_GET["custom_port"];
     <a href="javascript:widow_popup('help.php', 'popup');"><img src=./img/help.png width=30 height=30 border=0></img></a>
     <br>
     <textarea name="prompt" class='kb-source' rows="10" cols="100">
-// Get the largest prime number that smaller than input
-public static boolean isPrime(int n)
+int sum (a,b) {
 </textarea>
 <br>
 
