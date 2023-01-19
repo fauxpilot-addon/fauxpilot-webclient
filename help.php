@@ -10,6 +10,8 @@
 <h2>Example: Source Code</h2>
 <br>
 <hr>
+int fib(10){
+<hr>
 static ssize_t ltc2945_history_store(struct device *dev, struct device_attribute *da, const char *buf, size_t count) {
 <hr>
 static long long ltc2945_reg_to_val(struct device *dev, u8 reg) {
