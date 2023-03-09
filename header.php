@@ -6,7 +6,7 @@
 </head>
 
 <br>
-<img src=img/fauxpilot.png border=0></img><br>
+<img src=img/webclient.png border=0></img><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <?php
